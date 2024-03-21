@@ -42,6 +42,7 @@ dbt-core==1.5.0
     #   -r requirements.in
     #   dbt-duckdb
 dbt-duckdb==1.5.0
+dbt-bigquery==1.5.0
     # via -r requirements.in
 dbt-extractor==0.4.1
     # via dbt-core
