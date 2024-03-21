@@ -1,8 +1,14 @@
-jaffle_shop:
-
-  target: dev
+jaffle_shop_bq:
   outputs:
     dev:
-      type: duckdb
-      path: 'jaffle_shop.duckdb'
-      threads: 24
+      dataset: jaffle_shop_bq_demo
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /Users/surya/diesel-command-384802-43939d9abf91.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: diesel-command-384802
+      threads: 4
+      type: bigquery
+  target: dev
